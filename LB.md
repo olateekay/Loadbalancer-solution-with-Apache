@@ -7,3 +7,26 @@ In order to hide all this complexity and to have a single point of access with a
 Let us take a look at the updated solution architecture with an LB added on top of Web Servers
 
 https://professional-pbl.darey.io/en/latest/_images/Tooling-Website-Infrastructure-wLB.png
+
+In this project we add a Load Balancer to disctribute traffic between Web Servers and allow users to access our website using a single URL.
+
+### Task ###
+Deploy and configure an Apache Load Balancer for Tooling Website solution on a separate Ubuntu EC2 intance. Make sure that users can be served by Web servers through the Load Balancer.
+
+To simplify, let us implement this solution with 2 Web Servers, the approach will be the same for 3 and more Web Servers.
+
+### Prerequisites
+
+Two RHEL8 Web Servers
+One MySQL DB Server (based on Ubuntu 20.04)
+One RHEL8 NFS server
+
+
+https://professional-pbl.darey.io/en/latest/_images/prerequisites-project8.png
+
+
+### Configure Apache As A Load Balancer
+
+Create an Ubuntu Server 20.04 EC2 instance and name it Project-8-apache-lb, so your EC2 list will look like this:
+
+![alt text](image1.jpg)
