@@ -54,14 +54,14 @@ sudo systemctl restart apache2
 ```
 
 
-Make sure apache2 is up and running
+4. Make sure apache2 is up and running
 
 ```
 sudo systemctl status apache2
 
 ```
 
-Configure load balancing
+5. Configure load balancing
 
 ```
 sudo vi /etc/apache2/sites-available/000-default.conf
@@ -89,5 +89,7 @@ sudo systemctl restart apache2
 *NB* : `bytraffic`  balancing method will distribute incoming load between your Web Servers according to current traffic load.
 
 
-Verify that our configuration works - try to access your LB’s public IP address or Public DNS name from your browser:
+6. Verify that our configuration works - try to access your LB’s public IP address or Public DNS name from your browser:
 http://<Load-Balancer-Public-IP-Address-or-Public-DNS-Name>/index.php
+
+![alt text](image2.jpg)
