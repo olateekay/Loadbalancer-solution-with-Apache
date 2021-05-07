@@ -93,3 +93,8 @@ sudo systemctl restart apache2
 http://<Load-Balancer-Public-IP-Address-or-Public-DNS-Name>/index.php
 
 ![alt text](image2.jpg)
+
+7. Unmount `/var/log/httpd/` from your Web Servers to the NFS server and make sure that each Web Server has its own log directory.
+
+`sudo umount -t nfs ,nosuid <NFS-Server-Private-IP>:/mnt/apps /var/www/`
+
