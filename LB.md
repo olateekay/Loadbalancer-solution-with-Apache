@@ -29,7 +29,7 @@ https://professional-pbl.darey.io/en/latest/_images/prerequisites-project8.png
 
 1. Create an Ubuntu Server 20.04 EC2 instance and name it Project-8-apache-lb, so your EC2 list will look like this:
 
-![alt text](image1.jpg)
+![alt text](https://github.com/olateekay/Loadbalancer-solution-with-Apache/blob/main/Images/Image1.png)
 
 2. Open TCP port 80 on Project-8-apache-lb by creating an Inbound Rule in Security Group.
 3. Install Apache Load Balancer on Project-8-apache-lb server and configure it to point traffic coming to LB to both Web Servers:
@@ -92,7 +92,7 @@ sudo systemctl restart apache2
 6. Verify that our configuration works - try to access your LB’s public IP address or Public DNS name from your browser:
 http://<Load-Balancer-Public-IP-Address-or-Public-DNS-Name>/index.php
 
-![alt text](image2.jpg)
+![alt text](https://github.com/olateekay/Loadbalancer-solution-with-Apache/blob/main/Images/Image2.png)
 
 7. Unmount `/var/log/httpd/` from your Web Servers to the NFS server and make sure that each Web Server has its own log directory.
 
@@ -105,7 +105,7 @@ http://<Load-Balancer-Public-IP-Address-or-Public-DNS-Name>/index.php
 several times and make sure that both servers receive HTTP GET requests from your LB - new records must appear in each server’s log file. The number of requests to each server will be approximately the same since we set loadfactor to the same value for both servers - it means that traffic will be disctributed evenly between them.
 
 
-![alt text](image3.jpg)
+![alt text](https://github.com/olateekay/Loadbalancer-solution-with-Apache/blob/main/Images/Image3.png)
 
 ### Configure Local DNS Names Resolution
 
