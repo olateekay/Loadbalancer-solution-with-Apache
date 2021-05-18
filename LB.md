@@ -105,7 +105,7 @@ http://<Load-Balancer-Public-IP-Address-or-Public-DNS-Name>/index.php
 several times and make sure that both servers receive HTTP GET requests from your LB - new records must appear in each server’s log file. The number of requests to each server will be approximately the same since we set loadfactor to the same value for both servers - it means that traffic will be disctributed evenly between them.
 
 
-![alt text](https://github.com/olateekay/Loadbalancer-solution-with-Apache/blob/main/Images/Image3.png)
+![alt text](https://github.com/olateekay/Loadbalancer-solution-with-Apache/blob/main/Images/image3.png)
 
 ### Configure Local DNS Names Resolution
 
