@@ -92,7 +92,7 @@ sudo systemctl restart apache2
 6. Verify that our configuration works - try to access your LB’s public IP address or Public DNS name from your browser:
 http://<Load-Balancer-Public-IP-Address-or-Public-DNS-Name>/index.php
 
-![alt text](https://github.com/olateekay/Loadbalancer-solution-with-Apache/blob/main/Images/Image2.png)
+![alt text](https://github.com/olateekay/Loadbalancer-solution-with-Apache/blob/main/Images/image2.png)
 
 7. Unmount `/var/log/httpd/` from your Web Servers to the NFS server and make sure that each Web Server has its own log directory.
 
